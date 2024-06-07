@@ -12,7 +12,7 @@
             <RowDefinition Height="400*"></RowDefinition>
             <RowDefinition Height="60*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label HorizontalContentAlignment="Right" Name="labelStats"></Label>
+        <Label HorizontalContentAlignment="Right" Name="labelStats" VerticalContentAlignment="Center" FontSize="14">123</Label>
         <ListView Grid.Row="1" Name="lvRecordClasses" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -50,26 +50,27 @@
             </Grid.ColumnDefinitions>
             
             <StackPanel Grid.Column="1" Grid.Row="2" Name="SpSwapPage" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Width="60" Click="" Height="50" Margin="5 0">
+                <Button Width="60" Click="ButtonFirstPage" Height="50" Margin="5 0">
                     <materialDesign:PackIcon Kind="ArrowLeftBold" Width="25" Height="25"></materialDesign:PackIcon>
                 </Button>
-                <Button Width="60" Height="50" Margin="5 0">
+                <Button Width="60" Click="ButtonBackPage" Height="50" Margin="5 0">
                     <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"></materialDesign:PackIcon>
                 </Button>
-                <Button Width="60" Grid.Column="2" Height="50" Margin="5 0">
+                <Button Width="60" Grid.Column="2" Click="ButtonNextPage" Height="50" Margin="5 0">
                     <materialDesign:PackIcon Kind="ArrowRight" Width="25" Height="25"></materialDesign:PackIcon>
                 </Button>
-                <Button Width="60" Grid.Column="2" Height="50" Margin="5 0">
+                <Button Width="60" Click="ButtonLastPage" Grid.Column="2" Height="50" Margin="5 0">
                     <materialDesign:PackIcon Kind="ArrowRightBold" Width="25" Height="25"></materialDesign:PackIcon>
                 </Button>
+                
             </StackPanel>
             
         </Grid>
         <DockPanel>
-            <TextBox Width="200" DockPanel.Dock="Left" materialDesign:HintAssist.Hint="Поиск"></TextBox>
+            <TextBox FontSize="14" TextAlignment="Center" TextChanged="TextBox_TextChanged" Name="tbSearch" Width="200" DockPanel.Dock="Left" materialDesign:HintAssist.Hint="Поиск"></TextBox>
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
-                <ComboBox Height="40" Width="125" FontSize="14" materialDesign:HintAssist.Hint="Сортировка" Margin="5 0"></ComboBox>
-                <ComboBox Height="40" Width="125" FontSize="14" Margin="5 0" materialDesign:HintAssist.Hint="Размер скидки"></ComboBox>
+                <ComboBox Height="41" SelectionChanged="cbSortBy_SelectionChanged" x:Name="cbSortBy" Width="125" FontSize="14" materialDesign:HintAssist.Hint="Сортировка" Margin="5 0"></ComboBox>
+                <ComboBox Height="41" SelectionChanged="cbDiscount_SelectionChanged" x:Name="cbDiscount" Width="125" FontSize="14" Margin="5 0" materialDesign:HintAssist.Hint="Размер скидки"></ComboBox>
             </StackPanel>
         </DockPanel>
     </Grid>
