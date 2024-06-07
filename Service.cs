@@ -11,7 +11,9 @@ namespace RecordClasses
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Windows;
+    using System.Windows.Controls;
+
     public partial class Service
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -28,8 +30,67 @@ namespace RecordClasses
         public string Description { get; set; }
         public Nullable<double> Discount { get; set; }
         public string MainImagePath { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+        public string DisplayDuration
+        {
+            get
+            {
+                return $"рублей за {DurationInSeconds} минут";
+            }
+        }
+
+        public string DisplayDiscount
+        {
+            get
+            {
+                if (Discount != null)
+                {
+                    return $"* скидка {Discount * 100}%";
+                }
+                else
+                {
+                    return "";
+                }
+            }
+        }
+
+        public TextDecorationCollection textBlock
+        {
+            get
+            {
+               if (Discount != null)
+               {
+                    return TextDecorations.Strikethrough;
+               }
+               else
+               {
+                    return new TextDecorationCollection();
+               }
+            }
+        }
+
+        public string DisplayImage
+        {
+            get
+            {
+                return $"/Pic/{MainImagePath.Trim()}";
+            }
+        }
+
+        public string CostWithDiscount
+        {
+            get
+            {
+                if (Discount != null)
+                {
+                    return (Cost - (Cost * decimal.Parse(Discount.ToString()))).ToString("F2");
+                }
+                else
+                {
+                    return "";
+                }
+            }
+        }
         public virtual ICollection<ClientService> ClientService { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ServicePhoto> ServicePhoto { get; set; }

@@ -20,9 +20,18 @@ namespace RecordClasses
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static RcdbEntities RcdbEntities;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            RcdbEntities = new RcdbEntities();
+        }
+
+        private void ButtonWatchClasses(object sender, RoutedEventArgs e)
+        {
+            new RecordWin().Show();
         }
     }
 }
