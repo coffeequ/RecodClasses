@@ -189,5 +189,20 @@ namespace RecordClasses
             }
             Refresh();
         }
+
+        private void ButtonAdd(object sender, RoutedEventArgs e)
+        {
+            Service service = new Service();
+
+            new AddAndEditServices(service).ShowDialog();
+
+            UpdateLV();
+        }
+
+        private void UpdateLV()
+        {
+            lvRecordClasses.ItemsSource = null;
+            lvRecordClasses.ItemsSource = allService.ToList();
+        }
     }
 }

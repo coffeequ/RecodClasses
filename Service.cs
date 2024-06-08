@@ -73,7 +73,14 @@ namespace RecordClasses
         {
             get
             {
-                return $"/Pic/{MainImagePath.Trim()}";
+                if (MainImagePath.Contains("C:\\"))
+                {
+                    return MainImagePath;
+                }
+                else
+                {
+                    return $"/Pic/{MainImagePath.Trim()}";
+                }
             }
         }
 

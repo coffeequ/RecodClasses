@@ -12,7 +12,7 @@
             <RowDefinition Height="400*"></RowDefinition>
             <RowDefinition Height="60*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label HorizontalContentAlignment="Right" Name="labelStats" VerticalContentAlignment="Center" FontSize="14">123</Label>
+        <Label HorizontalContentAlignment="Right" Name="labelStats" VerticalContentAlignment="Center" FontSize="14"></Label>
         <ListView Grid.Row="1" Name="lvRecordClasses" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -42,30 +42,22 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40*"></ColumnDefinition>
-                <ColumnDefinition Width="225*"></ColumnDefinition>
-                <ColumnDefinition Width="40*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            
-            <StackPanel Grid.Column="1" Grid.Row="2" Name="SpSwapPage" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Width="60" Click="ButtonFirstPage" Height="50" Margin="5 0">
-                    <materialDesign:PackIcon Kind="ArrowLeftBold" Width="25" Height="25"></materialDesign:PackIcon>
-                </Button>
-                <Button Width="60" Click="ButtonBackPage" Height="50" Margin="5 0">
-                    <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"></materialDesign:PackIcon>
-                </Button>
-                <Button Width="60" Grid.Column="2" Click="ButtonNextPage" Height="50" Margin="5 0">
-                    <materialDesign:PackIcon Kind="ArrowRight" Width="25" Height="25"></materialDesign:PackIcon>
-                </Button>
-                <Button Width="60" Click="ButtonLastPage" Grid.Column="2" Height="50" Margin="5 0">
-                    <materialDesign:PackIcon Kind="ArrowRightBold" Width="25" Height="25"></materialDesign:PackIcon>
-                </Button>
-                
-            </StackPanel>
-            
-        </Grid>
+        <StackPanel Grid.Column="1" Grid.Row="2" Name="SpSwapPage" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="60" Click="ButtonFirstPage" Height="50" Margin="5 0">
+                <materialDesign:PackIcon Kind="ArrowLeftBold" Width="25" Height="25"></materialDesign:PackIcon>
+            </Button>
+            <Button Width="60" Click="ButtonBackPage" Height="50" Margin="5 0">
+                <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"></materialDesign:PackIcon>
+            </Button>
+            <Button Width="60" Grid.Column="2" Click="ButtonNextPage" Height="50" Margin="5 0">
+                <materialDesign:PackIcon Kind="ArrowRight" Width="25" Height="25"></materialDesign:PackIcon>
+            </Button>
+            <Button Width="60" Click="ButtonLastPage" Grid.Column="2" Height="50" Margin="5 0">
+                <materialDesign:PackIcon Kind="ArrowRightBold" Width="25" Height="25"></materialDesign:PackIcon>
+            </Button>
+            <Button Height="50" Width="125" FontSize="14" Click="ButtonAdd">Добавить</Button>
+        </StackPanel>
+
         <DockPanel>
             <TextBox FontSize="14" TextAlignment="Center" TextChanged="TextBox_TextChanged" Name="tbSearch" Width="200" DockPanel.Dock="Left" materialDesign:HintAssist.Hint="Поиск"></TextBox>
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">

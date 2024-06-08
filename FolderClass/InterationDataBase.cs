@@ -15,6 +15,13 @@ namespace RecordClasses.FolderClass
             RcdbEntities = rcdbEntities;
         }
 
+        public bool SaveService(Service item)
+        {
+            RcdbEntities.Service.Add(item);
+
+            return RcdbEntities.SaveChanges() >= 1 ? true : false;
+        }
+
 
     }
 }

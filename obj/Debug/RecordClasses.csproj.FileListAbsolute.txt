@@ -38,3 +38,5 @@ C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordClasses.exe
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordClasses.pdb
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordWin.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordWin.baml
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditServices.g.cs
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditServices.baml

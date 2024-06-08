@@ -81,6 +81,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddAndEditServices.xaml.cs">
+      <DependentUpon>AddAndEditServices.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Client.cs">
       <DependentUpon>RecodClassesEntities.tt</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
     <Compile Include="Tag.cs">
       <DependentUpon>RecodClassesEntities.tt</DependentUpon>
     </Compile>
+    <Page Include="AddAndEditServices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -205,6 +212,12 @@
     <Resource Include="Pic\Услуги школы\Португальский язык.jpg" />
     <Resource Include="Pic\Услуги школы\Французский язык.jpg" />
     <Resource Include="Pic\Услуги школы\Японский язык.jpg" />
+    <Resource Include="Pic\Услуги школы\free-icon-font-angle-left-3916912.png" />
+    <Resource Include="Pic\Услуги школы\free-icon-font-angle-right-3916907.png" />
+    <Resource Include="Pic\Услуги школы\free-icon-font-arrow-small-left-3916837.png" />
+    <Resource Include="Pic\Услуги школы\free-icon-font-heart-3916767.png" />
+    <Resource Include="Pic\Услуги школы\free-icon-font-home-3917014.png" />
+    <Resource Include="Pic\Услуги школы\free-icon-font-star-3916581.png" />
     <Content Include="RecodClassesEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>RecodClassesEntities.Context.cs</LastGenOutput>
