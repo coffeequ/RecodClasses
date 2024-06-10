@@ -31,7 +31,12 @@ namespace RecordClasses
 
         private void ButtonWatchClasses(object sender, RoutedEventArgs e)
         {
-            new RecordWin().Show();
+            new RecordWin().ShowDialog();
+        }
+
+        private void ButtonClient(object sender, RoutedEventArgs e)
+        {
+            new ClientWin().ShowDialog();
         }
     }
 }

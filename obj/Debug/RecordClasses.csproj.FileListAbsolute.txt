@@ -40,3 +40,7 @@ C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordWin.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordWin.baml
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditServices.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditServices.baml
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientWin.g.cs
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientWin.baml
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditClient.g.cs
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditClient.baml

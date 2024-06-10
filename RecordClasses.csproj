@@ -81,6 +81,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddAndEditClient.xaml.cs">
+      <DependentUpon>AddAndEditClient.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddAndEditServices.xaml.cs">
       <DependentUpon>AddAndEditServices.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,9 @@
     </Compile>
     <Compile Include="ClientService.cs">
       <DependentUpon>RecodClassesEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClientWin.xaml.cs">
+      <DependentUpon>ClientWin.xaml</DependentUpon>
     </Compile>
     <Compile Include="DocumentByService.cs">
       <DependentUpon>RecodClassesEntities.tt</DependentUpon>
@@ -139,7 +145,15 @@
     <Compile Include="Tag.cs">
       <DependentUpon>RecodClassesEntities.tt</DependentUpon>
     </Compile>
+    <Page Include="AddAndEditClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddAndEditServices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientWin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

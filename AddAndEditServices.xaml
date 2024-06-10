@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AddAndEditServices" Height="450" Width="800">
     <Grid>
-        <StackPanel>
+        <StackPanel Margin="10">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="5 0" FontSize="14">Наименование услуги</TextBlock>
                 <TextBox Text="{Binding Title}" FontSize="14" Width="200"></TextBox>
@@ -28,9 +28,9 @@
                 <TextBlock Margin="5 0" FontSize="14">Скидка*</TextBlock>
                 <TextBox Text="{Binding Discount}" FontSize="14" Width="200"></TextBox>
             </StackPanel>
-            <StackPanel HorizontalAlignment="Left">
+            <StackPanel Margin="10" HorizontalAlignment="Left">
                 <Border BorderThickness="1" BorderBrush="Black">
-                    <Image Source="{Binding MainImagePath}" Width="200" Height="200" Name="imageService"></Image>
+                    <Image Source="{Binding DisplayImage}" Width="200" Height="180" Name="imageService"></Image>
                 </Border>
                 <Button Margin="5 5" Click="ButtonSelectImage">Выбрать</Button>
             </StackPanel>

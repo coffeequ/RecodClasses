@@ -90,7 +90,13 @@ namespace RecordClasses
 
         private void ButtonEdit(object sender, RoutedEventArgs e)
         {
+            var item = sender as Button;
 
+            var selectedItem = item.DataContext as Service;
+
+            new AddAndEditServices(selectedItem).ShowDialog();
+
+            UpdateLV();
         }
 
         private void ButtonDelete(object sender, RoutedEventArgs e)
@@ -202,7 +208,10 @@ namespace RecordClasses
         private void UpdateLV()
         {
             lvRecordClasses.ItemsSource = null;
+
             lvRecordClasses.ItemsSource = allService.ToList();
+
+            Apply();
         }
     }
 }
