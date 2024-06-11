@@ -44,3 +44,7 @@ C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientWin.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientWin.baml
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditClient.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\AddAndEditClient.baml
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceRegWin.g.cs
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceWin.g.cs
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceRegWin.baml
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceWin.baml

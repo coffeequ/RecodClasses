@@ -10,5 +10,6 @@
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button FontWeight="Normal" Margin="5 5 5 0" Width="200" FontSize="16" Click="ButtonWatchClasses">Просмотр услуг</Button>
         <Button FontWeight="Normal" Margin="5 5 5 0" Width="200" FontSize="16" Click="ButtonClient">Клиенты</Button>
+        <Button FontWeight="Normal" Margin="5 5 5 0" Width="240" FontSize="16" Click="ButtonRegistrationClientForAService">Запись клиента на услугу</Button>
     </StackPanel>
 </Window>

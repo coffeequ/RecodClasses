@@ -15,27 +15,25 @@ namespace RecordClasses.FolderClass
             RcdbEntities = rcdbEntities;
         }
 
-        public bool SaveService(Service item)
+        public bool AddService(Service item)
         {
             RcdbEntities.Service.Add(item);
 
             return RcdbEntities.SaveChanges() >= 1 ? true : false;
         }
 
-        public bool SaveClient(Client item)
+        public bool AddClient(Client item)
         {
             RcdbEntities.Client.Add(item);
 
             return RcdbEntities.SaveChanges() >= 1 ? true : false;
         }
 
-        public bool SaveClientService(ClientService  item)
+        public bool AddClientService(ClientService  item)
         {
             RcdbEntities.ClientService.Add(item);
 
             return RcdbEntities.SaveChanges() >= 1 ? true : false;
         }
-
-
     }
 }
