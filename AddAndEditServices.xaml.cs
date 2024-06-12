@@ -39,10 +39,14 @@ namespace RecordClasses
         {
             if (service.ID == 0)
             {
-                if (InterationDataBase.SaveService(service))
+                if (InterationDataBase.AddService(service))
                 {
                     MessageBox.Show("Сохранено");
                 }
+            }
+            else
+            {
+                InterationDataBase.RcdbEntities.SaveChanges();
             }
         }
 

@@ -38,7 +38,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock FontSize="14" TextAlignment="Center">Пол</TextBlock>
-                <ComboBox SelectedValuePath="Code" SelectedValue="{Binding GenderCode}" DisplayMemberPath="Name" FontSize="14" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
+                <ComboBox x:Name="cbGender" SelectedValuePath="Code" SelectedValue="{Binding GenderCode}" DisplayMemberPath="Name" FontSize="14" Width="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></ComboBox>
             </StackPanel>
             <Button Width="200" Click="ButtonSave">Сохранить</Button>
         </StackPanel>

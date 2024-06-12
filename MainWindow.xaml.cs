@@ -38,5 +38,15 @@ namespace RecordClasses
         {
             new ClientWin().ShowDialog();
         }
+
+        private void ButtonRegistrationClientForAService(object sender, RoutedEventArgs e)
+        {
+            new ClientServiceWin().ShowDialog();
+        }
+
+        private void ButtonComingPosts(object sender, RoutedEventArgs e)
+        {
+            new ComingPostsWin().ShowDialog();
+        }
     }
 }

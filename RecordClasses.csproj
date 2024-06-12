@@ -93,8 +93,17 @@
     <Compile Include="ClientService.cs">
       <DependentUpon>RecodClassesEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="ClientServiceRegWin.xaml.cs">
+      <DependentUpon>ClientServiceRegWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClientServiceWin.xaml.cs">
+      <DependentUpon>ClientServiceWin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ClientWin.xaml.cs">
       <DependentUpon>ClientWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComingPostsWin.xaml.cs">
+      <DependentUpon>ComingPostsWin.xaml</DependentUpon>
     </Compile>
     <Compile Include="DocumentByService.cs">
       <DependentUpon>RecodClassesEntities.tt</DependentUpon>
@@ -153,7 +162,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ClientServiceRegWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientServiceWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ClientWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ComingPostsWin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

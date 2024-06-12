@@ -1,0 +1,34 @@
+﻿<Window x:Class="RecordClasses.ClientServiceRegWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecordClasses"
+        mc:Ignorable="d"
+        Title="ClientServiceRegWin" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="15">
+            <DockPanel>
+                <TextBlock FontSize="14">Наименование услуги</TextBlock>
+                <TextBox FontSize="14" Text="{Binding Title}"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <TextBlock FontSize="14">Длительность в минутах</TextBlock>
+                <TextBox FontSize="14" Text="{Binding DurationInSeconds}"></TextBox>
+            </DockPanel>
+            <DockPanel>
+                <TextBlock FontSize="14">Клиент</TextBlock>
+                <ComboBox Name="cbClients" FontSize="14"></ComboBox>
+            </DockPanel>
+            <DockPanel>
+                <TextBlock FontSize="14">Дата оказания услуги</TextBlock>
+                <DatePicker SelectedDateChanged="dpStartTime_SelectedDateChanged" Name="dpStartTime" Language="Ru"/>
+            </DockPanel>
+            <DockPanel>
+                <TextBlock FontSize="14">Дата окончания услуги</TextBlock>
+                <DatePicker Name="dpEndTime" Language="Ru"/>
+            </DockPanel>
+            <Button Width="200" Margin="5 5 5 0" Click="ButtonSave">Сохранить</Button>
+        </StackPanel>
+    </Grid>
+</Window>

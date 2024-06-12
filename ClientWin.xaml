@@ -11,7 +11,7 @@
             <RowDefinition Height="10*"></RowDefinition>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <DataGrid AutoGenerateColumns="False" x:Name="dgClient" Height="382">
+        <DataGrid AutoGenerateColumns="False" x:Name="dgClient">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding FirstName}" Header="Фамилия"></DataGridTextColumn>
                 <DataGridTextColumn Binding="{Binding LastName}" Header="Имя"></DataGridTextColumn>

@@ -32,13 +32,22 @@ namespace RecordClasses
             DataContext = client;
 
             InterationDataBase = new FolderClass.InterationDataBase(MainWindow.RcdbEntities);
+
+            cbGender.ItemsSource = InterationDataBase.RcdbEntities.Gender.ToList();
         }
 
         private void ButtonSave(object sender, RoutedEventArgs e)
         {
-            if (InterationDataBase.SaveClient(client))
+            if (client.ID == 0)
             {
-                MessageBox.Show("Успешное сохранение");
+                if (InterationDataBase.AddClient(client))
+                {
+                    MessageBox.Show("Успешное сохранение");
+                }
+            }
+            else
+            {
+                InterationDataBase.RcdbEntities.SaveChanges();
             }
         }
     }

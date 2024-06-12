@@ -11,7 +11,8 @@ namespace RecordClasses
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Windows.Media;
+
     public partial class ClientService
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -26,6 +27,7 @@ namespace RecordClasses
         public int ServiceID { get; set; }
         public System.DateTime StartTime { get; set; }
         public string Comment { get; set; }
+
     
         public virtual Client Client { get; set; }
         public virtual Service Service { get; set; }
@@ -33,5 +35,49 @@ namespace RecordClasses
         public virtual ICollection<DocumentByService> DocumentByService { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductSale> ProductSale { get; set; }
+
+        private DateTime tempDateTime;
+
+        public string DateTimeToStart
+        {
+            get
+            {
+                DateTime temp;
+                try
+                {
+                    temp = new DateTime() + (StartTime - DateTime.Now);
+                }
+                catch
+                {
+                    return "Запись закончилась";
+                }
+
+                if (temp.Month > 1)
+                {
+                    tempDateTime = temp;
+                    return $"{(((temp.Month - 1) * 30) * 24) + (temp.Day * 24) + temp.Hour} {temp.Minute}";
+                }
+                else
+                {
+                    tempDateTime = temp;
+                    return $"{(temp.Day * 24) + temp.Hour} часа {temp.Minute} минут";
+                }
+            }
+        }
+
+        public SolidColorBrush colorBrush
+        {
+            get
+            {
+                if (tempDateTime.Hour < 1)
+                {
+                    return Brushes.Red;
+                }
+                else
+                {
+                    return Brushes.Black;
+                }
+            }
+        }
     }
 }
