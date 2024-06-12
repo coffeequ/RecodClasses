@@ -21,7 +21,6 @@ C:\Users\Savva\Desktop\RCProject\RecordClasses\bin\Debug\Microsoft.Xaml.Behavior
 C:\Users\Savva\Desktop\RCProject\RecordClasses\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\Savva\Desktop\RCProject\RecordClasses\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\Savva\Desktop\RCProject\RecordClasses\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
-C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordClasses.csproj.AssemblyReference.cache
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\MainWindow.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\App.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\RecordClasses_Content.g.cs
@@ -48,3 +47,5 @@ C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceRegWin.g.c
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceWin.g.cs
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceRegWin.baml
 C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ClientServiceWin.baml
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ComingPostsWin.g.cs
+C:\Users\Savva\Desktop\RCProject\RecordClasses\obj\Debug\ComingPostsWin.baml

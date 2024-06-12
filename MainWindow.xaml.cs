@@ -43,5 +43,10 @@ namespace RecordClasses
         {
             new ClientServiceWin().ShowDialog();
         }
+
+        private void ButtonComingPosts(object sender, RoutedEventArgs e)
+        {
+            new ComingPostsWin().ShowDialog();
+        }
     }
 }
