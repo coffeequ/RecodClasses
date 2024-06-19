@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RecordClasses"
         mc:Ignorable="d"
-        Title="ClientWin" Height="450" Width="800">
+        Title="Услуги" Height="450" Width="800" FontFamily="Comic Sans MS" Icon="/Pic/school_logo.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"></RowDefinition>

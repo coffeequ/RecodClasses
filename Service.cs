@@ -13,6 +13,7 @@ namespace RecordClasses
     using System.Collections.Generic;
     using System.Windows;
     using System.Windows.Controls;
+    using System.Windows.Media;
 
     public partial class Service
     {
@@ -64,7 +65,7 @@ namespace RecordClasses
                }
                else
                {
-                    return new TextDecorationCollection();
+                    return null;
                }
             }
         }
@@ -73,6 +74,10 @@ namespace RecordClasses
         {
             get
             {
+                if (MainImagePath == null)
+                {
+                    return null;
+                }
                 if (MainImagePath.Contains("C:\\"))
                 {
                     return MainImagePath;
@@ -81,6 +86,7 @@ namespace RecordClasses
                 {
                     return $"/Pic/{MainImagePath.Trim()}";
                 }
+
             }
         }
 
@@ -110,6 +116,21 @@ namespace RecordClasses
                 else
                 {
                     return Cost;
+                }
+            }
+        }
+
+        public SolidColorBrush DiscountColor
+        {
+            get
+            {
+                if (Discount > 0)
+                {
+                    return (SolidColorBrush)new BrushConverter().ConvertFrom("#eaf9c5");
+                }
+                else
+                {
+                    return Brushes.LightGray;
                 }
             }
         }
