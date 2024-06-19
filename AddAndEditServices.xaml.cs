@@ -22,6 +22,8 @@ namespace RecordClasses
     {
         Service service;
 
+        List<Service> allService;
+
         FolderClass.InterationDataBase InterationDataBase;
 
         public AddAndEditServices(Service service)
@@ -33,15 +35,28 @@ namespace RecordClasses
             DataContext = service;
 
             InterationDataBase = new FolderClass.InterationDataBase(MainWindow.RcdbEntities);
+
+            allService = InterationDataBase.RcdbEntities.Service.ToList();
         }
 
         private void ButtonSave(object sender, RoutedEventArgs e)
         {
             if (service.ID == 0)
             {
-                if (InterationDataBase.AddService(service))
+                int countExist = allService.Where(item => item.Title.Contains(tbTitleService.Text)).Count();
+
+                double countHours = int.Parse(tbDurationService.Text) / 60;
+
+                if (countExist == 0 && countHours > 0 && countHours <= 4)
                 {
-                    MessageBox.Show("Сохранено");
+                    if (InterationDataBase.AddService(service))
+                    {
+                        MessageBox.Show("Сохранено");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка при сохранении");
                 }
             }
             else

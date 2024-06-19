@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RecordClasses"
         mc:Ignorable="d"
-        Title="AddAndEditServices" Height="450" Width="800">
+        Title="Услуги" Height="450" Width="800" FontFamily="Comic Sans MS" Icon="/Pic/school_logo.ico">
     <Grid>
         <StackPanel Margin="10">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="5 0" FontSize="14">Наименование услуги</TextBlock>
-                <TextBox Text="{Binding Title}" FontSize="14" Width="200"></TextBox>
+                <TextBox Name="tbTitleService" Text="{Binding Title}" FontSize="14" Width="200"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="5 0" FontSize="14">Цена</TextBlock>
@@ -18,7 +18,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="5 0" FontSize="14">Длительность (в минутах)</TextBlock>
-                <TextBox Text="{Binding DurationInSeconds}" FontSize="14" Width="200"></TextBox>
+                <TextBox Name="tbDurationService" Text="{Binding DurationInSeconds}" FontSize="14" Width="200"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="5 0" FontSize="14">Описание*</TextBlock>

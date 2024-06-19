@@ -44,7 +44,7 @@ namespace RecordClasses
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("Тест таймера");
+            MessageBox.Show("Таймер сработан");
 
             dgClientService.ItemsSource = null;
 

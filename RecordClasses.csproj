@@ -253,6 +253,8 @@
     <Resource Include="Pic\Услуги школы\free-icon-font-heart-3916767.png" />
     <Resource Include="Pic\Услуги школы\free-icon-font-home-3917014.png" />
     <Resource Include="Pic\Услуги школы\free-icon-font-star-3916581.png" />
+    <Resource Include="Pic\school_logo.ico" />
+    <Resource Include="Pic\school_logo.png" />
     <Content Include="RecodClassesEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>RecodClassesEntities.Context.cs</LastGenOutput>
